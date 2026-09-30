@@ -28,7 +28,6 @@
     h2 { text-align: center; font-weight: normal; color: #7a5a44; margin: 0 0 25px; }
     h3 { color: #c0392b; border-bottom: 2px solid #e8b04a; padding-bottom: 5px; }
 
-    /* VIDEO: esquina superior izquierda */
     .video-caja {
       max-width: 560px;
       margin-bottom: 25px;
@@ -45,7 +44,6 @@
       border: 0; border-radius: 12px;
     }
 
-    /* RECETA (izquierda) + IMAGEN (derecha) */
     .columnas {
       display: flex;
       gap: 30px;
@@ -59,7 +57,7 @@
     img.pizza {
       display: block;
       width: 100%;
-      margin-top: 220px;   /* aumenta este número para bajarla más */
+      margin-top: 220px;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     }
@@ -74,8 +72,6 @@
     }
     .boton:hover { background: #a93226; }
     .ubicacion { text-align: center; margin-top: 30px; }
-
-    /* En celulares todo se apila */
     @media (max-width: 800px) {
       .columnas { flex-direction: column; }
       img.pizza { margin-top: 0; }
@@ -84,10 +80,9 @@
 </head>
 <body>
   <main class="contenedor">
-    <h1>🍕 Pizza con Jamón</h1>
+    <h1> Pizza con Jamón</h1>
     <h2>Cómo cocinar una pizza</h2>
 
-    <!-- VIDEO arriba a la izquierda -->
     <div class="video-caja">
       <div class="video">
         <iframe
@@ -99,7 +94,6 @@
       <a class="boton" href="https://youtu.be/crdtrzZj3fo" target="_blank" rel="noopener">▶ Ver el video en YouTube</a>
     </div>
 
-    <!-- RECETA a la izquierda, IMAGEN a su lado -->
     <div class="columnas">
 
       <div class="receta">
@@ -133,9 +127,8 @@
 
     </div>
 
-    <!-- UBICACIÓN abajo -->
     <div class="ubicacion">
-      <h3>📍 Nuestra ubicación</h3>
+      <h3> Nuestra ubicación</h3>
       <a class="boton" href="https://share.google/OFPVuaNTgrMZS1HBz" target="_blank" rel="noopener">Ver en Google Maps</a>
     </div>
   </main>
